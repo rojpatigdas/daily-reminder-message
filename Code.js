@@ -10,7 +10,7 @@ function sendNotification() {
   var messages = createMessagesBasedOnTime();
   if (!messages || messages.length === 0) return;
 
-  var webhookUrl = "YOUR_CHAT_WEBHOOK_URL"; // TODO: Insert your Google Chat webhook URL here.
+  var webhookUrl = "https://chat.googleapis.com/v1/spaces/AAAAAABBBB/messages?key=AIzaSyD-YourAPIKeyHere&token=YOUR_CHAT_TOKEN"; // TODO: Insert your Google Chat webhook URL here.
 
   messages.forEach(function(message) {
     var payload = {
